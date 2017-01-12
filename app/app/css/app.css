@@ -1,0 +1,62 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.my-img {
+  max-height: 400px;
+}
+
+.carousel-indicators {
+  z-index: 5 !important;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+.item-string {
+  padding: 0px;
+}
+
+.menu-item {
+}
+
+.my-hidden {
+  display: none;
+}
+
+@media screen and (min-width:992px) {
+  .item-string {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .item-string {
+    padding: 55px;
+  }
+}
